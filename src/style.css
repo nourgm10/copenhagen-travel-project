@@ -16,9 +16,8 @@
 }
 
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 50px;
 }
 
 body {
@@ -69,6 +68,26 @@ h4 {
   opacity: 0.9;
 }
 
+h5 {
+  color: var(--dark-color-1);
+  font-family: var(--font-1);
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  margin: 20px 0 0 0;
+}
+
+h6 {
+  color: var(--dark-color-1);
+  font-family: var(--font-1);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  margin: 30px 0 0 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -81,7 +100,7 @@ p {
   background-image: linear-gradient(var(--overlay-color), var(--overlay-color)),
     url(/images/nyhavn.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   text-align: center;
   padding: 250px 0;
@@ -140,10 +159,15 @@ p {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 62px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cafes-section {
   background-color: var(--dark-color-2);
+  height: 1200px;
+  align-items: center;
+  padding-bottom: 150px;
 }
 
 .cafes-section h3 {
@@ -159,6 +183,63 @@ p {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 18px;
+}
+
+.boxes-cafes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  height: 370px;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1200px;
+}
+
+.box-cafe {
+  background-color: var(--primary-color);
+  height: 1120px;
+  width: 350px;
+  padding: 0 20px 0 0;
+}
+
+.image-cafe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+}
+
+.image-container {
+  height: 370px;
+  width: 370px;
+}
+
+.cafe-content {
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.cafe-content p {
+  text-align: justify;
+}
+
+.cafe-button {
+  font-family: var(--font-2);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 1;
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 16px 32px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 32px;
+  background: var(--accent-color);
+  width: 242px;
+  height: 16px;
+  text-transform: uppercase;
 }
 
 footer {
