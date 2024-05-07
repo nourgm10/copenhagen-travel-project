@@ -48,6 +48,24 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  color: var(--primary-color);
+  font-family: var(--font-1);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: var(--font-2);
+}
+
 .hero {
   background-image: linear-gradient(var(--overlay-color), var(--overlay-color)),
     url(/images/nyhavn.jpg);
@@ -78,8 +96,47 @@ h3 {
   box-shadow: 0px 0px 25px 8px rgba(13, 30, 45, 0.3);
 }
 
-a {
-  text-decoration: none;
+footer {
+  color: var(--primary-color);
+  background-image: linear-gradient(
+      rgba(22, 53, 57, 0.85),
+      rgba(22, 53, 57, 0.85)
+    ),
+    url(/images/cph-skateboard.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 35px 20px;
+  text-shadow: 0px 0px 25px rgba(13, 30, 45, 0.3);
+}
+
+.boxes-footer {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-gap: 64px;
+}
+
+footer p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--primary-color);
+  font-family: var(--font-2);
+  text-align: left;
+  opacity: 0.75;
+}
+
+footer a {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  color: var(--primary-color);
+  font-family: var(--font-2);
+  text-align: justify;
+  text-decoration: underline;
+  opacity: 0.75;
 }
 
 @media (max-width: 900px) {
