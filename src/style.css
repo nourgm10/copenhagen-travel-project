@@ -15,6 +15,16 @@
   margin: 0 auto;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+body {
+  background-color: var(--dark-color-1);
+}
+
 h1 {
   color: var(--primary-color);
   font-family: var(--font-1);
@@ -46,6 +56,7 @@ h3 {
   line-height: normal;
   letter-spacing: 5px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -96,6 +107,60 @@ p {
   box-shadow: 0px 0px 25px 8px rgba(13, 30, 45, 0.3);
 }
 
+.intro-section h3 {
+  color: var(--secondary-color);
+  font-size: 16px;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.intro-section h2 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.intro-section p {
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--tertiary-color);
+}
+
+.image-intro {
+  width: 570px;
+  height: 541px;
+}
+
+.boxes-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 62px;
+}
+
+.cafes-section {
+  background-color: var(--dark-color-2);
+}
+
+.cafes-section h3 {
+  color: var(--secondary-color);
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.cafes-section h2 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 18px;
+}
+
 footer {
   color: var(--primary-color);
   background-image: linear-gradient(
@@ -108,6 +173,7 @@ footer {
   background-repeat: no-repeat;
   padding: 35px 20px;
   text-shadow: 0px 0px 25px rgba(13, 30, 45, 0.3);
+  margin-bottom: 0;
 }
 
 .boxes-footer {
@@ -144,6 +210,10 @@ footer a {
     padding: 60px 0;
   }
 
+  section {
+    padding: 50px 0;
+  }
+
   h1 {
     font-size: 60px;
   }
@@ -159,5 +229,50 @@ footer a {
     font-size: 10px;
     padding: 12px 14px;
     line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 10px;
+  }
+
+  .boxes-footer {
+    grid-gap: 30px;
+  }
+
+  .boxes-intro {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .box-intro {
+    padding: 40px;
+    width: 456px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .image-intro {
+    width: 456px;
+    height: 433px;
+  }
+
+  .intro-section h3 {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .intro-section h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .intro-section p {
+    font-size: 14px;
+    text-align: center;
   }
 }
