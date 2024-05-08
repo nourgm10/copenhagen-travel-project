@@ -18,6 +18,7 @@
 section {
   margin: 0 auto;
   padding: 100px 50px;
+  width: 100%;
 }
 
 body {
@@ -105,6 +106,7 @@ p {
   text-align: center;
   padding: 250px 0;
   text-shadow: 0px 0px 25px rgba(13, 30, 45, 0.3);
+  width: 100%;
 }
 
 .learn-more-button {
@@ -207,17 +209,17 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 
+.image-container {
+  height: 185px;
+  width: 370px;
+  margin-bottom: 20px;
+}
+
 .image-cafe {
   height: 100%;
   width: 50%;
   object-fit: cover;
   align-items: center;
-}
-
-.image-container {
-  height: 185px;
-  width: 370px;
-  margin-bottom: 20px;
 }
 
 .cafe-content {
@@ -246,6 +248,22 @@ p {
   width: 242px;
   height: 16px;
   text-transform: uppercase;
+}
+
+.gallery-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  height: 770px;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.gallery-box {
+  height: 370px;
+  width: 370px;
+  object-fit: cover;
+  align-items: center;
 }
 
 footer {
@@ -295,10 +313,12 @@ footer a {
 @media (max-width: 900px) {
   .hero {
     padding: 60px 0;
+    width: 100%;
   }
 
   section {
     padding: 50px 0;
+    max-width: 100%;
   }
 
   h1 {
@@ -331,6 +351,11 @@ footer a {
     grid-gap: 30px;
   }
 
+  .intro-section {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .boxes-intro {
     grid-template-columns: 1fr;
     grid-gap: 0;
@@ -338,14 +363,14 @@ footer a {
 
   .box-intro {
     padding: 40px;
-    width: 456px;
+    max-width: 342px;
     display: block;
     margin: 0 auto;
   }
 
   .image-intro {
-    width: 456px;
-    height: 433px;
+    max-width: 342px;
+    height: 325px;
   }
 
   .intro-section h3 {
@@ -364,18 +389,55 @@ footer a {
   }
 
   .cafes-section {
-    padding-bottom: 150px;
+    height: 3600px;
+    width: 100%;
+  }
+
+  .boxes-cafes {
+    grid-template-columns: 1fr;
+    height: 1200px;
+    margin: 0 auto;
+    width: 350px;
   }
 
   .box-cafe {
-    height: 1120px;
+    background-color: var(--primary-color);
+    height: 1135px;
+    width: 350px;
+    padding: 0 20px 0 0;
   }
 
-  .image-cafe {
-    width: 100%;
+  .box-image {
+    grid-template-columns: 1fr;
   }
 
   .image-container {
     height: 370px;
+    width: 370px;
+    margin-bottom: 20px;
+  }
+
+  .image-cafe {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+  }
+
+  .cafe-map {
+    display: none;
+  }
+
+  .gallery-boxes {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    height: 645px;
+    width: 385px;
+    margin: 0 auto;
+  }
+
+  .gallery-box {
+    height: 185px;
+    width: 185px;
   }
 }
