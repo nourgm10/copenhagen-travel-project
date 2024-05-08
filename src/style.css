@@ -167,7 +167,7 @@ p {
   background-color: var(--dark-color-2);
   height: 1200px;
   align-items: center;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .cafes-section h3 {
@@ -197,21 +197,27 @@ p {
 
 .box-cafe {
   background-color: var(--primary-color);
-  height: 1120px;
+  height: 950px;
   width: 350px;
   padding: 0 20px 0 0;
 }
 
+.box-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .image-cafe {
   height: 100%;
-  width: 100%;
+  width: 50%;
   object-fit: cover;
   align-items: center;
 }
 
 .image-container {
-  height: 370px;
+  height: 185px;
   width: 370px;
+  margin-bottom: 20px;
 }
 
 .cafe-content {
@@ -355,5 +361,21 @@ footer a {
   .intro-section p {
     font-size: 14px;
     text-align: center;
+  }
+
+  .cafes-section {
+    padding-bottom: 150px;
+  }
+
+  .box-cafe {
+    height: 1120px;
+  }
+
+  .image-cafe {
+    width: 100%;
+  }
+
+  .image-container {
+    height: 370px;
   }
 }
